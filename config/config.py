@@ -1,5 +1,7 @@
 import os
 
+from .observer import MultiplexingObserver, LoggingObserver, JSObserver
+
 
 def playerIcons(poi):
     if poi['id'] == 'Player':
@@ -36,6 +38,11 @@ def signFilter(poi):
 
 worlds['minecraft'] = "/home/minecraft/server/world"
 outputdir = "/home/minecraft/render/"
+
+# Ensure we both output progress and update the web interface
+logging_observer = LoggingObserver()
+js_observer = JSObserver(outputdir)
+observer = MultiplexingObserver(logging_observer, js_observer)
 
 markers = [
     dict(name="Players", filterFunction=playerIcons),

@@ -45,7 +45,7 @@ markers = [
 renders["day"] = {
     'world': 'minecraft',
     'title': 'Day',
-    'rendermode': 'smooth_lighting',
+    'rendermode': 'lighting',
     "dimension": "overworld",
     'markers': markers
 }
@@ -53,7 +53,15 @@ renders["day"] = {
 renders["night"] = {
     'world': 'minecraft',
     'title': 'Night',
-    'rendermode': 'smooth_night',
+    'rendermode': 'night',
+    "dimension": "overworld",
+    'markers': markers
+}
+
+renders["cave"] = {
+    'world': 'minecraft',
+    'title': 'Cave',
+    'rendermode': 'cave',
     "dimension": "overworld",
     'markers': markers
 }
@@ -61,7 +69,7 @@ renders["night"] = {
 renders["nether"] = {
     "world": "minecraft",
     "title": "Nether",
-    "rendermode": 'nether_smooth_lighting',
+    "rendermode": 'nether_lighting',
     "dimension": "nether",
     'markers': markers
 }
@@ -69,7 +77,7 @@ renders["nether"] = {
 renders["end"] = {
     "world": "minecraft",
     "title": "End",
-    "rendermode": [Base(), EdgeLines(), SmoothLighting(strength=0.5)],
+    "rendermode": [Base(), EdgeLines(), Lighting(strength=0.5)],
     "dimension": "end",
     'markers': markers
 }

@@ -94,7 +94,7 @@ renders["overlay_biome"] = {
     'rendermode': [ClearBase(), BiomeOverlay()],
     'title': "Biome Coloring Overlay",
     "dimension": "overworld",
-    'overlay': ["day"]
+    'overlay': ["day", "night"]
 }
 
 renders["overlay_mobs"] = {
@@ -102,7 +102,7 @@ renders["overlay_mobs"] = {
     'rendermode': [ClearBase(), SpawnOverlay()],
     'title': "Mob Spawnable Areas Overlay",
     "dimension": "overworld",
-    'overlay': ["day"]
+    'overlay': ["day", "night"]
 }
 
 renders["overlay_slime"] = {
@@ -110,5 +110,5 @@ renders["overlay_slime"] = {
     'rendermode': [ClearBase(), SlimeOverlay()],
     'title': "Slime Chunk Overlay",
     "dimension": "overworld",
-    'overlay': ["day"]
+    'overlay': ["day", "night"]
 }

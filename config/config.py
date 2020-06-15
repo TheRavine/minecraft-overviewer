@@ -81,6 +81,14 @@ renders["nether"] = {
     'markers': markers
 }
 
+renders["nether-cave"] = {
+    "world": "minecraft",
+    "title": "Nether Cave",
+    "rendermode": [Base(), Nether(), Cave()],
+    "dimension": "nether",
+    'markers': markers
+}
+
 renders["end"] = {
     "world": "minecraft",
     "title": "End",

@@ -81,6 +81,14 @@ renders["nether"] = {
     'markers': markers
 }
 
+renders["nether_roof"] = {
+    "world": "minecraft",
+    "title": "Nether Roof",
+    "rendermode": [Base(), Depth(min=127, max=255), EdgeLines(), Lighting()],
+    "dimension": "nether",
+    'markers': markers
+}
+
 renders["end"] = {
     "world": "minecraft",
     "title": "End",

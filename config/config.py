@@ -84,7 +84,7 @@ renders["nether"] = {
 renders["nether_roof"] = {
     "world": "minecraft",
     "title": "Nether Roof",
-    "rendermode": [Base(), Depth(min=127, max=255), EdgeLines(), Lighting()],
+    "rendermode": [Base(), Depth(min=127, max=255), EdgeLines(), Lighting(strength=0.5)],
     "dimension": "nether",
     'markers': markers
 }
